@@ -3,11 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Budget Tracker</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1>SPENDING FOR</h1>
+          <h2>august</h2>
+          <form>
+            <div class="row">
+              <input
+                type="number"
+                name="amount"
+                id=""
+                placeholder="Amount"
+                autocomplete="off"
+              />
+            </div>
+            <div class="row">
+              <div class="col">
+                <input type="radio" name="category" id="" /> Appointment
+                <input type="radio" name="category" id="" /> Apartment
+                <input type="radio" name="category" id="" /> Donation
+                <input type="radio" name="category" id="" /> Groceries
+              </div>
+              <div class="col">
+                <input type="radio" name="category" id="" /> Misc.
+                <input type="radio" name="category" id="" /> Restaurant/Delivery
+                <input type="radio" name="category" id="" /> Transportation
+                <input type="radio" name="category" id="" /> Travel
+              </div>
+            </div>
+            <div class="row">
+              <input
+                type="text"
+                name="place"
+                id=""
+                placeholder="Details"
+                autocomplete="off"
+              />
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+          <p>How am I doing?</p>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
