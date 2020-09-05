@@ -9,6 +9,10 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Budget Tracker</title>
   </head>
@@ -17,45 +21,70 @@
       <div class="card">
         <div class="card-body">
           <h1>SPENDING FOR</h1>
-          <h2>august</h2>
+          <h2><strong>september</strong></h2>
           <form>
             <div class="row">
               <input
                 type="number"
                 name="amount"
+                class="input-text amount"
                 id=""
                 placeholder="Amount"
                 autocomplete="off"
               />
             </div>
-            <div class="row">
-              <div class="col">
-                <input type="radio" name="category" id="" /> Appointment
-                <input type="radio" name="category" id="" /> Apartment
-                <input type="radio" name="category" id="" /> Donation
-                <input type="radio" name="category" id="" /> Groceries
+            <div class="row input-options">
+              <div class="row">
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Appointment
+                </div>
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Apartment
+                </div>
               </div>
-              <div class="col">
-                <input type="radio" name="category" id="" /> Misc.
-                <input type="radio" name="category" id="" /> Restaurant/Delivery
-                <input type="radio" name="category" id="" /> Transportation
-                <input type="radio" name="category" id="" /> Travel
+              <div class="row">
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Donation
+                </div>
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Groceries
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Misc.
+                </div>
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Restaurant
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Transportation
+                </div>
+                <div class="col">
+                  <input type="radio" name="category" id="" /> Travel
+                </div>
               </div>
             </div>
             <div class="row">
               <input
                 type="text"
                 name="place"
+                class="input-text details"
                 id=""
                 placeholder="Details"
                 autocomplete="off"
               />
             </div>
             <div class="row">
-              <input type="submit" value="Submit" />
+              <input
+                type="submit"
+                value="Submit"
+                class="input-text submit-button"
+              />
             </div>
           </form>
-          <p>How am I doing?</p>
         </div>
       </div>
     </div>

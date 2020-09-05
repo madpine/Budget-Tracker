@@ -1,0 +1,53 @@
+.container {
+  color: #ebebff;
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background: #4d4dff;
+  border-radius: 10px;
+  width: 300px;
+}
+
+h1 {
+  font-size: 17px;
+  margin: 10px 0 0 0;
+}
+
+h2 {
+  color: #b0f2b4;
+  font-size: 50px;
+  text-align: center;
+}
+
+.input-text {
+  background: #ebebff;
+  border: 1px solid #ebebff;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 2px #3333ff;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.input-options {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.amount {
+  width: 100px;
+}
+
+.details {
+  width: 80%;
+}
+
+.submit-button {
+  background: #b0f2b4;
+  border: 1px solid #b0f2b4;
+  color: #4d4dff;
+  line-height: 20px;
+}
