@@ -22,13 +22,13 @@
         <div class="card-body">
           <h1>SPENDING FOR</h1>
           <h2 id="month"></h2>
-          <form>
+          <form id="spending-form">
             <div class="row">
               <input
                 type="number"
                 name="amount"
                 class="input-text amount"
-                id=""
+                id="input-amount"
                 placeholder="Amount"
                 autocomplete="off"
               />
@@ -87,6 +87,18 @@
           </form>
           <p>REMAINING SPENDING THIS MONTH:</p>
           <h3><strong>₪100</strong></h3>
+          <div class="container spending-list">
+            <div class="row">
+              <div class="col-3 list-head"><strong>date</strong></div>
+              <div class="col-4 list-head"><strong>amount</strong></div>
+              <div class="col-5 list-head"><strong>category</strong></div>
+            </div>
+            <div class="row">
+              <div class="col-3 list" id="date-stamp"></div>
+              <div class="col-4 list" id="amount-spent"></div>
+              <div class="col-5 list" id="category-spent">Transportation</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
