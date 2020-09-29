@@ -44,9 +44,30 @@ function transactionDetails(event) {
   document.querySelector(
     "#amount-spent"
   ).innerHTML = `₪${event.target[0].value}`;
-  document.querySelector("#category-spent").innerHTML = event.value;
 
-  console.log(event);
+  // Return checked radio button
+  function category() {
+    if (event.target[1].checked) {
+      return event.target[1].form[1].offsetParent.innerText;
+    } else if (event.target[2].checked) {
+      return event.target[2].form[2].offsetParent.innerText;
+    } else if (event.target[3].checked) {
+      return event.target[3].form[3].offsetParent.innerText;
+    } else if (event.target[4].checked) {
+      return event.target[4].form[4].offsetParent.innerText;
+    } else if (event.target[5].checked) {
+      return event.target[5].form[5].offsetParent.innerText;
+    } else if (event.target[6].checked) {
+      return event.target[6].form[6].offsetParent.innerText;
+    } else if (event.target[7].checked) {
+      return event.target[7].form[7].offsetParent.innerText;
+    } else if (event.target[8].checked) {
+      return event.target[8].form[8].offsetParent.innerText;
+    } else {
+      return `N/A`;
+    }
+  }
+  document.querySelector("#category-spent").innerHTML = category();
 }
 
 let amountForm = document.querySelector("#spending-form");
