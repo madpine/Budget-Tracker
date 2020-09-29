@@ -41,7 +41,9 @@ function transactionDetails(event) {
   document.querySelector("#date-stamp").innerHTML = `${dateStamp(
     event.timeStamp * 1000
   )}`;
-  document.querySelector("#amount-spent").innerHTML = `₪${event.value}`;
+  document.querySelector(
+    "#amount-spent"
+  ).innerHTML = `₪${event.target[0].value}`;
   document.querySelector("#category-spent").innerHTML = event.value;
 
   console.log(event);
