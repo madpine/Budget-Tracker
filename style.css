@@ -65,15 +65,13 @@ h3 {
   text-align: center;
 }
 
-.spending-list {
+ul {
+  list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.list-head {
-  font-size: 15px;
-}
-
-.list {
-  font-size: 12px;
+li {
+  display: inline;
+  margin: 0 auto;
 }

@@ -35,15 +35,16 @@ function dateStamp() {
   return `${month + 1}/${date}`;
 }
 
+let itemDate = null;
+let itemAmount = null;
+let itemCategory = null;
+
 // Display spending submission details
 function transactionDetails(event) {
   event.preventDefault();
-  document.querySelector("#date-stamp").innerHTML = `${dateStamp(
-    event.timeStamp * 1000
-  )}`;
-  document.querySelector(
-    "#amount-spent"
-  ).innerHTML = `₪${event.target[0].value}`;
+  itemDate = `${dateStamp(event.timeStamp * 1000)}`;
+
+  itemAmount = `₪${event.target[0].value}`;
 
   // Return checked radio button
   function category() {
@@ -67,7 +68,17 @@ function transactionDetails(event) {
       return `N/A`;
     }
   }
-  document.querySelector("#category-spent").innerHTML = category();
+  itemCategory = category();
+
+  listItem();
+}
+
+// Add item to list
+function listItem() {
+  let node = document.createElement("li");
+  let textnode = document.createTextNode("testing");
+  node.appendChild(textnode);
+  document.getElementById("list-items").appendChild(node);
 }
 
 let amountForm = document.querySelector("#spending-form");
